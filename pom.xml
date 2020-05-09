@@ -15,6 +15,16 @@
       <artifactId>hbase-client</artifactId>
       <version>1.2.4</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-common</artifactId>
+      <version>2.7.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hbase</groupId>
+      <artifactId>hbase-server</artifactId>
+      <version>1.2.4</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -30,6 +40,16 @@
       </plugin>
     </plugins>
   </build>
+
+  <repositories>
+    <repository>
+      <id>hbase-local</id>
+      <name>Local HBase</name>
+      <url>file:///Users/kmandawe/.local/opt/hbase-1.2.4/lib</url>
+    </repository>
+  </repositories>
+
+
 
 
 </project>
